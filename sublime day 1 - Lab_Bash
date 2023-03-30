@@ -1,0 +1,164 @@
+
+# I did all the following homework on the Git Bash Terminal (Windows). Here is a copy of it: 
+
+0. Lab | Bash Setup (Fork the Repo)
+
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack
+$ cd Week_1
+
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1
+$ ls
+Day_1/  Day_2/  Day_3/  Day_4/  Day_5/
+
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1
+$ cd Day_1
+
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1
+$ ls
+Afternoon/  Morning/
+
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1
+$ cd Afternoon
+
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1/Afternoon
+$ ls
+
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1/Afternoon
+$ git clone https://github.com/aldozbt/IronAldo.git
+Cloning into 'IronAldo'...
+remote: Enumerating objects: 40, done.
+remote: Total 40 (delta 0), reused 0 (delta 0), pack-reused 40
+Receiving objects: 100% (40/40), 12.63 KiB | 1.40 MiB/s, done.
+Resolving deltas: 100% (11/11), done.
+
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1/Afternoon
+$ ls
+IronAldo/
+
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1/Afternoon
+$ cd IronAldo
+
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+1 . Using the echo command print in console "Hello World".
+$ echo "Hello World"
+Hello World
+
+2. Create a new directory called new_dir.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ mkdir 'new_dir'
+
+3. Delete/Remove the directory new_dir.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ rm -rf new_dir
+
+4. Copy the file sed.txt from the lorem folder and paste it to the folder lorem-copy folder
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ cd lorem
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo/lorem (master)
+$ cp sed.txt 'copy_sed'.txt
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo/lorem (master)
+$ cd ..
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ mv lorem/copy_sed.txt lorem-copy/
+
+5.Copy the other two files from the lorem folder to lorem-copy folder in just one line using semicolon ;.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/Desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ cp lorem/at.txt lorem-copy/ # I don't know how to copy 2 files at the same time 
+
+6.Show the sed.txt file content from the lorem folder.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/Desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ cat lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+7. Show the at.txt file and lorem.txt file contents from lorem folder
+Aldo@DESKTOP-CACKN7N MINGW64 ~/Desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ cat lorem/at.txt lorem/lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+8. Print the first 3 rows in sed.txt file from lorem-copy folder.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/Desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ head -3 lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+9. Print the last 3 rows in sed.txt file from lorem-copy folder.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/Desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ tail -3 lorem-copy/sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+10. Add Homo homini lupus. at the end of sed.txt file in the lorem-copy folder.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/Desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ echo "Homo homini lupus" >> lorem-copy/sed.txt
+
+11. Print the last 3 rows in sed.txt file from lorem-copy folder. You should see Homo homini lupus.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/Desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ tail -3 lorem-copy/sed.txt
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus
+
+12. sed command is used to replace the text in a file. Use the sed command to replace all occurances of ET with et in the file at.txt file present in the folder lorem. You can use the following link to refer to sed commands [https://www.linode.com/docs/guides/manipulate-text-from-the-command-line-with-sed/] Check the contents of the sed.txt file using cat command.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/Desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ sed 's/ET/et/g' lorem/at.txt
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+Et harum quidem rerum facilis est et expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+13. Find who is the system user.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/Desktop/Ironhack/Week_1/Day_1/Afternoon/IronAldo (master)
+$ whoami
+Aldo
+
+14. Find the current path of the directory you are in.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/ironhack/week_1/day_1/afternoon
+$ pwd
+/c/Users/Aldo/desktop/ironhack/week_1/day_1/afternoon
+
+15. List all files with the extension .txt in lorem folder.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/ironhack/week_1/day_1/afternoon/ironaldo (master)
+$ ls lorem/*txt
+lorem/at.txt  lorem/lorem.txt  lorem/sed.txt
+
+16. Count the rows in sed.txt file from lorem folder. Look concatenate cat and wc with the pipe |.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/ironhack/week_1/day_1/afternoon/ironaldo (master)
+$ cat lorem/sed.txt | wc # not quite right but it shows "9" rows ... 
+      9     131     900
+
+17. Count the files which start with lorem in all directories.
+Aldo@DESKTOP-CACKN7N MINGW64 ~/desktop/ironhack/week_1/day_1/afternoon/ironaldo (master)
+$ ls lorem* | wc # not sure about this ... 
+     12      11     106
+
